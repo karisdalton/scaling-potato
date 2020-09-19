@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <div class="container grey lighten-4">
+        <form action="#">
+            <p class="title">Please Select Size:</p>
+            <div class="row center-align sizes">
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input name="size" class="size" id="small" type="radio" value="500">
+                            <span>Small</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input name="size" class="size" id="medium" type="radio" value="750">
+                            <span>Medium</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input name="size" class="size" id="large" type="radio" value="1500">
+                            <span>Large</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+
+            <p class="title">Please Select Crust:</p>
+            <div class="row center-align crusts">
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input name="crust" type="radio" value="crispy">
+                            <span>Crispy</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input name="crust" type="radio" value="stuffed">
+                            <span>Stuffed</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input name="crust" type="radio" value="gluten-free">
+                            <span>Gluten-free</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+
+            <p class="title">Please Select Toppings:</p>
+            <div class="row center-align toppings">
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input type="checkbox" class="topping" value="0">
+                            <span>Cheese</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input type="checkbox" class="topping" value="0">
+                            <span>Onions</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input type="checkbox" class="topping" value="0">
+                            <span>Pineapples</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+
+        </form>
+        <button type="submit" class="waves-effect waves-light btn blue darken-1" id="button">Order Pizza</button>
+        <div class="row resultDiv">
+            <div class="col s12 m6">
+                <div class="card horizontal blue-grey darken-1">
+                    <div class="stacked">
+                        <div class="card-content white-text">
+                            <span class="card-title">Total Bill</span>
+                            <p id="results"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./Js/jquery-3.5.1.js"></script>
+    <script src="./materialize/js/materialize.min.js"></script>
+    <!-- <script src="Js/scripts.js"></script> -->
+    <script src='./Js/home.js'></script>
+</body>
+</html>
